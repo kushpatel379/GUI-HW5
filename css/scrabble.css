@@ -1,0 +1,173 @@
+/*
+    Kush Patel
+    November 16, 2021
+    Assignment: Scrabble and Drag and Drop
+    The purpose of this assignment it to make a scrabble game using jQuery. We had to use multiple features. In this file i style the page. I
+    style the size of the images, text, buttons. I also style it in a way to make sure the letteres appear on top of the image.
+*/
+
+
+
+body{
+    width: 100% ;
+    /* overflow-y:hidden; */
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: rgb(216, 200, 200);
+}
+
+h1{
+    text-align: center;             /*centers title*/
+    font-weight: bold;
+    color: rgb(34, 88, 34);
+}
+
+#test{
+    text-align: center;               /*styles the cursor when grabbing the word */
+}
+
+#tHold{
+    width: 950px;                     /*styles the tile holders*/
+    height: 200px;
+    text-align: center;
+    /* position:relative; */
+}
+
+#hold{
+    margin: auto;
+    margin-top: -200px;
+    text-align: center;
+}
+
+#tFirst, #tSecond, #tThird, #tFourth, #tFifth, #tSixth, #tSeventh{
+    height: 120px;              /*styles the images of the letters*/
+    width: 110px;   
+}
+
+#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7{
+    display: inline-block;          /*displays the tiles in a row*/
+    /* margin: auto !important; */
+    cursor: grab;
+    /* background-color: green; */
+    height: 120px;              /*styles the images of the letters*/
+    width: 110px; 
+}
+
+#tile1:active, #tile2:active, #tile3:active, #tile4:active, #tile5:active, #tile6:active, #tile7:active{
+    cursor: grabbing;               /* grabbing effect when clicking on tile*/
+}
+
+#game_Rules{
+    width: 100%;
+    font-size: 20px !important;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(34, 88, 34);
+    margin-top: 70px !important;
+
+}
+
+#warning{
+    color: red;
+}
+
+ul{
+    list-style-type: solid circle;
+    text-align: center;
+}
+
+li{
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: center;
+}
+
+
+
+
+button:hover {                                                  /*adds stying to button when pressed*/
+    background-color: #4c6faf; /* Green */
+    color: white;
+}
+
+
+#letters, #submit, #newGame{
+    transition-duration: 0.4s;                          /* colors animates in*/
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#points, #total{                                /*displays the texts and numbers of the points text*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(34, 88, 34);
+
+}
+
+#pointsFinal{
+    margin-left: 180px !important;              /*styling to the points*/
+    display: inline-block;
+    position:absolute;
+    font-weight: bold;
+    color: rgb(34, 88, 34);
+}
+
+#totalFinal{
+    margin-left: 250px !important;
+    display: inline-block;
+    position:absolute;
+    font-weight: bold;
+    color: rgb(34, 88, 34);
+
+}
+
+#word{
+    text-align: center !important;              /* centers the word displayed after submit*/
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+}
+
+#new{
+    text-align: center;
+}
+
+#placement{
+    text-align: center;             /*styles the pace where to submit the blocks*/
+    margin-top: -238.5px;
+}
+
+
+#targetBar{
+    text-align: center;
+    margin-top: 35px;
+}
+
+#oneRow{
+    width: 800px;
+    height: 125px;
+    margin-top: 0px;
+} 
+
+#target1,#target2,#target3,#target4,#target5,#target6,#target7 {
+    display:inline-block;       /*displays the boxes in a row*/
+    height: 120px;
+    width: 110px;
+    text-align: center;
+    margin: auto; 
+}
+
+.dropable img{
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+
+
+
