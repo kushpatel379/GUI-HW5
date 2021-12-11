@@ -1,0 +1,105 @@
+<!--
+    Kush Patel
+    November 16, 2021
+    Assignment: Scrabble and Drag and Drop
+    The purpose of this assignment it to make a scrabble game using jQuery. We had to use multiple features. In this html file, i have 
+    placed div from where the tiles will appear and divs of where the tiles can be dragged to. I also placed divs for points and the rules.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title> Scrabble</title>
+    <link href="./css/scrabble.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <h1> Scrabble Game</h1>
+    </header> 
+
+    <p id = "test" >
+        <div id = "hold">
+            <div id = "tile1" class="select"> </div>
+            <div id = "tile2" class="select"> </div>
+            <div id = "tile3" class="select"> </div>
+            <div id = "tile4" class="select"> </div>
+            <div id = "tile5" class="select"> </div>
+            <div id = "tile6" class="select"> </div>
+            <div id = "tile7" class="select"> </div>
+
+        </div>
+    </p>
+
+    <div id = "game_Rules">
+        <p id = "rules"> Rules: 
+            <ul>
+                <li> Create a word below on the board by dragging the letters. </li>
+                <li> Creating a word by using the 'Double Word Score' will double your score for that word. </li>
+                <li> Press 'New Game' to reset the score of the game and start a new game from 0.</li>
+                <li > <div id = "warning"> You can't move a tile once it is placed. A real word is not needed </div> </li>
+            </ul>
+        </p>
+    </div>
+    
+    <div id = "new"> 
+        <button id = "submit"> Submit </button>
+        <button id = "letters"> New Letters </button>
+        <button id = "newGame"> New Game </button>
+    </div><br>
+
+
+
+    
+    <div id = "points"> <div id = pointsFinal></div> </div>
+    <div id = "total"> <div id = totalFinal> </div></div> <br>
+
+    <!-- <div id = "wordCenter"> -->
+        <div id = "word">  </div> 
+    <!-- </div> -->
+
+
+    <div id = "targetBar" class="ui-widget-header">
+        <div id = "target1" class="dropable"> 
+        </div>
+
+        <div id = "target2" class="dropable  double"> 
+        </div>
+
+        <div id = "target3" class="dropable"> 
+        </div>
+
+        <div id = "target4" class="dropable"> 
+        </div>
+
+        <div id = "target5" class="dropable"> 
+        </div>
+
+        <div id = "target6" class="dropable  double"> 
+        </div>
+
+        <div id = "target7" class="dropable"> 
+        </div>
+
+
+    </div> 
+    <br> <br> <br> <br> <br> <br> 
+
+    <div id = "placement"></div> <br>
+
+    <!-- <div id = "points"> </div>
+    <div id = "total"> </div> -->
+
+
+
+    <script defer src="./js/scrabble.js"></script>
+
+
+
+</body>
+</html>
